@@ -29,8 +29,8 @@ print(os.getcwd())
 data_path = '/home/Food59/' 
 
 train_batchsize = 8
-train_dir = '/home/Food59/train'
-validation_dir = '/home/Food59/val'
+train_dir = '/home/Food/train'
+validation_dir = '/home/Food/val'
 
 train_datagen = ImageDataGenerator(rescale=1./255,
     horizontal_flip=True,
