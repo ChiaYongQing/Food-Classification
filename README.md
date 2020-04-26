@@ -67,7 +67,6 @@ def conv1x1(in_planes, out_planes, stride=1):
     """1x1 convolution"""
     return nn.Conv2d(in_planes, out_planes, kernel_size=1, stride=stride, bias=False)
 
-
 class BasicBlock(nn.Module):
     expansion = 1
 
@@ -404,4 +403,4 @@ if __name__=="__main__":
 
     train_model(dataloaders, model, dataset_sizes, criterion, optimizer, num_epochs, save_dir, f)
 ```
-Training at 20 epochs result in best validation accuracy of >98%.
+Training at 20 epochs results in best validation accuracy of >98%.
